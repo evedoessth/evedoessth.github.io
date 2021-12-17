@@ -3210,6 +3210,11 @@ input, select, textarea {
 			max-width: 100%;
 			width: 75em;
 		}
+		.wrapper > .outer {
+			padding: 1em 1em 0.5em 1em ;
+			max-width: 100%;
+			width: 75em;
+		}
 
 			@media screen and (max-width: 1680px) {
 
@@ -3874,10 +3879,15 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
-		background-position: top right;
+		
+		/*background-image: url("images/gradientIntro.png");*/
+		
+		background: rgb(83,61,139);
+		background: linear-gradient(340deg, rgba(83,61,139,1) 48%, rgba(65,146,183,1) 100%); 
+		
+		background-position: top left;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: 125% 125%;
 	}
 
 		#intro p {
