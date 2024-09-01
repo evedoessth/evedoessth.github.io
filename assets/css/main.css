@@ -111,6 +111,45 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+/* Modal */
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(73, 51, 130);
+		background-color: rgba(33, 17, 71, 0.4);
+	}
+
+
+
+	.modal-content {
+		background-color: #493382;
+		margin: 5% auto 15% 25%;
+		padding: 20px;
+		width: 70%;
+	}
+
+	.close {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+
+	@media screen and (max-width: 1280px) {
+
+		.modal > .modal-content {
+			margin: 15% auto;
+			width: 80%;
+		}
+
+	}
 
 /* Type */
 

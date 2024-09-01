@@ -13,6 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -29,9 +30,59 @@
 				</div>
 			</section>
 
+		<!--Modals-->
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
+				<div id="dwarf-digger-modal" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<div id='image' class='image'>
+							<img class='modal-image' src="images/NightLifeDriveGame.gif"/>
+						</div>
+						<div id='content' class='content'>
+							<div id='description' class='description'>
+								<h2 id='project1' class='project1'>
+									Project 1</h2>
+								<p id='' class=''>
+									Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+							</div>
+							<div id='responsibilities' class='responsibilities'>
+								<div id='aufgaben' class='aufgaben'>
+									Aufgaben</div>
+								<div id='loremthingsiethatalsothisespecially' class='loremthingsiethatalsothisespecially'>
+									Lorem thingsie
+									that also
+									this especially</div>
+							</div>
+							<div id='links' class='links'>
+								<div id='links2' class='links2'>
+									Links</div>
+								<div id='frame6' class='frame6'>
+									<div id='account_balance_wallet' class='account_balance_wallet'>
+										<div id='boundingbox' class='boundingbox'>
+										</div>
+										<img id='account_balance_wallet2' class='account_balance_wallet2' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGASURBVHgB1ZiBUcIwFIb/cg6gE8AIMoFlA52AbiBOABuoExQ30AmECagTUCewG8T/XRMu5epZkjSF/+7dJekl/ZrkPd4jgSWl1AQRlCRJ2fqAALe0nYqnvbyzAad34ZM2QVxVtKnZnRHtcQAI0TVtbjojPTCUJrBAzkJX8NNa2xfPuoKHfEAe+PJ3BJIryMJA0Ovkjt3TxjhNsoMfh5jChXJ1mvZmJXF9HRN8tJK1XC6rfRw5/F1/SZixC4h9KVOEUXo27tsnSIXm7mEIEPGqGzG2n7pM6ANkTYBX02H7BXXQiw6yaRnbAvFB0paxOyA+SMa4sDAd3c7+m+T7o/eXngmw1O1OaUZfIJ0BjC46oNlfukEYbV1AUqstwaqEn1aSCrjcESk95pz8RivYnmk4l3yk4Bp1jHHIR0Q/6qgu8ZXrZZV7stMfEQTI12sy1ECuykOBBJOAlBhOh3xFal85b0mIY1d8zdpXF0ZTxN2Zgjaz/55I7KeSTSOCCPB9PPYLFUC9jYNxk58AAAAASUVORK5CYII='/>
+										</img>
+									</div>
+									<div id='linked_camera' class='linked_camera'>
+										<div id='boundingbox2' class='boundingbox2'>
+										</div>
+										<img id='linked_camera2' class='linked_camera2' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJVSURBVHgBzZjhUeswDMeVHt8fb4LnNwHdAHcC2KBlAmCClglgg4YJygYtE1AmcJgAmEBIjVxc4+Yih1B+dzo3tmP/I1u2rgX0DCJaKk7JnsnWRVFUcEhI0BR3WZKN4VDQ5JdkDr+yIDNx/wIySA2UIlweeueYinOyKZmRam4fdVpGGrjEdjgvRMSEY0zDfnF7H2JCQdNg4vEeUQvQQi/NUIdLTMw8eY9QeRvUW64rggkNFZdkKff59ddQ0d74L+Na2N07K2obiTAn42/qvJhzslf8XlysMPLIWVT3uhGI9aZz2B9LDKISPz98ETjDMxxQ3TBwZR9YslBUKeVQynXQ999Rz2I8Bur9eU12LyLepI3Lifx+ZpdN8GdwbZQfwfdQwacn9mFYFTQzGUA+K6j3x18Ob7FC6krIJMdDvOZXNPd9qpHqH6l4JGdwunELSnI8dLFPTCTsjvuCEq2gkiZ68A8cylgfbA7rK2EehDeLKqm4Aw3KKDORGJeKpqjfMbZnrPFQnH7OIR1VRto20Du859bQEo2gKnq2DX0t7uY4vQjyJ2vbjPEPZKARtP1iWbq3hr6cerwEzwZ6EGSj55uGvmX0PISWqDyEktUxcs7MEv1m1LYVy1EM6aQvjTLsHX5N2Dn8z8TiNm2uNdZeHQbq3GYk4ez3U5X4UBa3BGV6k3N18H54aoo0WdolKPaOJzf9MGSOJl5Bfev7iDoRERYy6ZoPWegweYou+VAv/EpBre+ZH6AaUNiyoBUcngfJNrcH2BwPx0LOrd3/h6Qy65buwLs/ZJkPDHSBhAW5VrIAAAAASUVORK5CYII='/>
+										</img>
+									</div>
+									<div id='linked_services' class='linked_services'>
+										<div id='boundingbox3' class='boundingbox3'>
+										</div>
+										<img id='linked_services2' class='linked_services2' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAnCAYAAAB9qAq4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH0SURBVHgB7ZjhccIwDIXlHgPQDbJBuwF0gnYD2AA2gA2gE0AnKJ0gdALSCZxOABuoMnE4MLaxbELzg+9Ol5CzXl6IHVsWYAERn+nQo+jqSyXFtxCihCtA+kp3cKS/o/i6qE+JGUWObmaQaIxi7tFfKA8+cxIvs9H/ANdcqL60mgxMPjwpMEH/mzn7E8zkIfLpM8zF6Ks+Ch2tMQI+I3T1l3MGwGdI8SHUmbIL7WNHo/qxzQaBDIoHfb6D9rH3VPfBgqIPPFYU88C2Y4o34FEcziJHWRZ4I6XfRz4DUyRnJE+ACeUsGfoLm4CahjYByVHTndbPA/T9MxVWr1s6EmO+Z6b+xKG/RcubER4hSYdM/1zTiH+BK0L6vSP9kuKH7hH+NTGeMod/4gFazt1gKneDqdwNptJ6gx3bRctcyK7ifGh9VXtn+lJJUVycSfSEPtXzoomaWaaQbm7s0FfM0LVQwPC69RMj6mJ9j5All7TqY9hS6/CkwAT9OwomuZncdF0cvaKuR3HMOu+V0Ta2Lq7AOGTonZDXfWq2KvdW38GYQbXPSTF4k1q6NrgGPkVDbU9yUgwuGW3fgc/ppgCzIze9PyhtAk3vsHYxZYf1yOTCkWitWyNMzjzmctOccBmlwxNUKw5FCdUu/FVGrkVf6a5I/9ds+wc3s/4u5Q+xOAAAAABJRU5ErkJggg=='/>
+										</img>
+									</div>
+								</div>
+							</div>
+						</div>
 
+					</div>
+				</div>
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
@@ -53,10 +104,15 @@
 									I was responsible for creating character, enviromental and weapon designs, as well as leading Game Design, Narrative and Mechanical design discussions: 
 									<a href="https://github.com/proehr/dwarf-digger" target="_blank">Link to GitHub Repository.</a>
 								</p>
+								<button id="dwarf-digger-button" class="modal-button">More Info</button>
+								
 								<!---TODO: Insert Design Files in a Gallery?-->
 								<!--TODO: Get a picture of this-->
+								
 							</div>
+
 						</div>
+						
 					</section>
 					<section>
 						<a  class="image"><img src="images/NightLifeDriveGame.gif" alt="" data-position="center center" /></a>
@@ -94,6 +150,7 @@
 							</div>
 						</div>
 					</section>
+					
 				</section>
 
 				<!-- Two -->
@@ -289,6 +346,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/modal.js"></script>
 
 	</body>
 </html>
