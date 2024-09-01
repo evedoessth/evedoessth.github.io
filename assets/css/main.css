@@ -120,9 +120,10 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		overflow: auto;
+		overflow: scroll;
 		background-color: rgb(73, 51, 130);
 		background-color: rgba(33, 17, 71, 0.4);
+		max-font-size: 16.5pt;
 	}
 
 
@@ -130,8 +131,24 @@ input, select, textarea {
 	.modal-content {
 		background-color: #493382;
 		margin: 5% auto 15% 25%;
-		padding: 20px;
 		width: 70%;
+		border-radius: 10px;
+	}
+	.modal-content > .inner {
+		padding: 20px;
+	}
+
+	.modal-content > .inner > .modal-project {
+		display:block;
+	}
+
+	.modal-content > .inner >.image {
+		display: block;
+		margin: 0 auto;
+		width: 20%;
+	}
+	.modal-project-links > div {
+		display: inline-block;
 	}
 
 	.close {
@@ -139,6 +156,10 @@ input, select, textarea {
 		float: right;
 		font-size: 28px;
 		font-weight: bold;
+		height:40px;
+		width:40px;
+		right:15px;
+		top:15px;
 	}
 
 
@@ -147,6 +168,8 @@ input, select, textarea {
 		.modal > .modal-content {
 			margin: 15% auto;
 			width: 80%;
+		}
+		.modal-content > .inner {
 		}
 
 	}
