@@ -142,11 +142,16 @@ input, select, textarea {
 		display:block;
 	}
 
-	.modal-content > .inner >.image {
+	.modal-content > .inner > .image {
 		display: block;
 		margin: 0 auto;
 		width: 20%;
 	}
+.modal-content > .inner > .image > img {
+	max-height: 400px;
+	max-width: 400px;
+}
+
 	.modal-project-links > div {
 		display: inline-block;
 	}
