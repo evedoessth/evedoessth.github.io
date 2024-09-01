@@ -111,6 +111,73 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+/* Modal */
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: scroll;
+		background-color: rgb(73, 51, 130);
+		background-color: rgba(33, 17, 71, 0.4);
+		max-font-size: 16.5pt;
+	}
+
+
+
+	.modal-content {
+		background-color: #493382;
+		margin: 5% auto 15% 25%;
+		width: 70%;
+		border-radius: 10px;
+	}
+	.modal-content > .inner {
+		padding: 20px;
+	}
+
+	.modal-content > .inner > .modal-project {
+		display:block;
+	}
+
+	.modal-content > .inner > .image {
+		display: block;
+		margin: 0 auto;
+		width: 20%;
+	}
+.modal-content > .inner > .image > img {
+	max-height: 400px;
+	max-width: 400px;
+}
+
+	.modal-project-links > div {
+		display: inline-block;
+	}
+
+	.close {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		height:40px;
+		width:40px;
+		right:15px;
+		top:15px;
+	}
+
+
+	@media screen and (max-width: 1280px) {
+
+		.modal > .modal-content {
+			margin: 15% auto;
+			width: 80%;
+		}
+		.modal-content > .inner {
+		}
+
+	}
 
 /* Type */
 
