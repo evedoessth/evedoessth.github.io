@@ -3,8 +3,6 @@ var modal = document.getElementById("modal");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-var testImageSource = "images/NightLifeDriveGame.gif";
-
 var modalImageContainer = document.getElementById("modal-image-container");
 var descriptionHeader = document.getElementById("modal-project-description-header");
 var descriptionContainer = document.getElementById("modal-project-descriptions-content");
@@ -15,6 +13,7 @@ var linkContainer = document.getElementById("modal-project-links-content");
 //Buttons from different sections
 var dwarfDiggerButton = document.getElementById("dwarf-digger-button");
 var nightLifeButton = document.getElementById("night-life-button");
+var battrEButton = document.getElementById("battr-e-button");
 
 /* Array Content:
 * 0. Title of the Project
@@ -48,15 +47,28 @@ const nightLifeArray = ["Night Life Drive",
     "images/NightLifeDriveGame.gif"
 ];
 
+const battrEArray = ["Batr - E - Nikolas Journey",
+    "2D Pixelart Platformer Demo about the little robot Nikola trying to bring power back to an old factory all while trying not to run out of power themselves. Group project coded in Unity.\n" +
+        "My responsibilities were in the asset creation of both the tilemap and the player figure as well as helping with the level design.",
+    "Character Design",
+    "Character & Asset Art",
+    "Support on Level Design",
+    "Itch.io",
+    "https://n-c0de-r.itch.io/batr-e-nikolas-journey",
+    "images/batrE.gif"
+]
+
 // When the user clicks the button, open the modal 
 dwarfDiggerButton.onclick = function() {
-  modal.style.display = "block";
-  addContent(dwarfDiggerArray);
+    addContent(dwarfDiggerArray);
 }
 
 nightLifeButton.onclick = function () {
-    modal.style.display = "block";
     addContent(nightLifeArray);
+}
+
+battrEButton.onclick = function () {
+    addContent(battrEArray);
 }
 
 function addContent(contentArray) {
@@ -64,12 +76,11 @@ function addContent(contentArray) {
     modalImageContainer.innerHTML = "";
     responsibilitiesContent.innerHTML = "";
     linkContainer.innerHTML = "";
-    //responsibility
-    //Link
     //fill description
     descriptionHeader.textContent = contentArray[0];
     descriptionContainer.textContent = contentArray[1];
     //fill the responsibility list
+    //TODO: responsive List to have any number of Points
     for (let i = 2; i <= 4; i++) {
         var descriptionNode = document.createElement("li");
         var textNode = document.createTextNode(contentArray[i]);
@@ -89,16 +100,18 @@ function addContent(contentArray) {
     image.className = "modal-image";
     image.src = contentArray[7];
     modalImageContainer.appendChild(image);
+
+    modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+    modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside the modal, close it
 window.onclick = function(event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 }
